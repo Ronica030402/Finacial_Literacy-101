@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Financial Literacy Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+  </head>
+  <body>
+    <h1>Financial Literacy101 Quiz</h1>
+    <form id="quiz-form">
+      <h2>Question 1:</h2>
+      <p>What is a credit score?</p>
+      <label>
+        <input type="radio" name="q1" value="a">
+        a. A number that represents a person's creditworthiness
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q1" value="b">
+        b. A number that represents a person's debt
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q1" value="c">
+        c. A number that represents a person's income
+      </label>
+      <br>
+      
+      <h2>Question 2:</h2>
+      <p>What is the difference between a savings account and a checking account?</p>
+      <label>
+        <input type="radio" name="q2" value="a">
+        a. A savings account is for long-term saving and a checking account is for day-to-day transactions
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q2" value="b">
+        b. A savings account is for day-to-day transactions and a checking account is for long-term saving
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q2" value="c">
+        c. There is no difference between a savings account and a checking account
+      </label>
+      <br>
+      
+      <h2>Question 3:</h2>
+      <p>What is a budget?</p>
+      <label>
+        <input type="radio" name="q3" value="a">
+        a. A plan for spending and saving money
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q3" value="b">
+        b. A plan for spending money only
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="q3" value="c">
+        c. A plan for saving money only
+      </label>
+      <br>
+      
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    
+    <div id="results-container">
+      <h2>Results:</h2>
+      <p id="score-text"></p>
+      <p id="feedback-text"></p>
+    </div>
+    
+    <script src="javascript/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Survey</title>
+  </head>
+  <link rel="stylesheet" href="css/feedback.html">
+  <body>
+    <h1>feedback Survey</h1>
+    <p>Thank you for visiting our website! Please take a moment to answer the following questions:</p>
+    <form>
+      <fieldset>
+        <legend>Financial Concepts</legend>
+        <p>
+          <label for="easy-to-understand">Were the explanations of financial concepts easy to understand?</label><br>
+          <input type="radio" id="easy-to-understand-yes" name="easy-to-understand" value="yes">
+          <label for="easy-to-understand-yes">Yes</label><br>
+          <input type="radio" id="easy-to-understand-no" name="easy-to-understand" value="no">
+          <label for="easy-to-understand-no">No</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Resources and Tools</legend>
+        <p>
+          <label for="improve-financial-skills">Did the resources and tools available on the website help you improve your financial skills?</label><br>
+          <input type="radio" id="improve-financial-skills-yes" name="improve-financial-skills" value="yes">
+          <label for="improve-financial-skills-yes">Yes</label><br>
+          <input type="radio" id="improve-financial-skills-no" name="improve-financial-skills" value="no">
+          <label for="improve-financial-skills-no">No</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Design and Usability</legend>
+        <p>
+          <label for="satisfied-design-usability">How satisfied are you with the overall design and usability of the website?</label><br>
+          <select id="satisfied-design-usability" name="satisfied-design-usability">
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Information Relevance</legend>
+        <p>
+          <label for="relevant-up-to-date">Did you find the information on the website to be relevant and up-to-date?</label><br>
+          <input type="radio" id="relevant-up-to-date-yes" name="relevant-up-to-date" value="yes">
+          <label for="relevant-up-to-date-yes">Yes</label><br>
+          <input type="radio" id="relevant-up-to-date-no" name="relevant-up-to-date" value="no">
+          <label for="relevant-up-to-date-no">No</label>
+        </p>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+    <script src="javascript/feedback.html"></script>
+  </body>
+</html>

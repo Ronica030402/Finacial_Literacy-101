@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    /*background: linear-gradient(skyblue,lightgreen);*/
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /*ensures that linear-gradient colours are applied in the entire page*/
+    background-size: cover;
+    background-position: center;   
+    background: lightseagreen;
+}
+#h1{
+    color: white
+}
+header{
+    position: fixed;  
+    top:0; left: 0; right: 0;  
+    background-color: lightseagreen;
+    box-shadow: 0 0.1875em 0.625em;
+    padding: 0em 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 1.1625em;
+    color: black;
+    display: flex;
+    white-space: nowrap;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 1.0em; 
+    padding: 1.25em; 
+    display: block; 
+    color: black;
+     
+}
+header .navbar ul li a:hover{
+    color:black ;
+    background-color: #aaa5a5;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 15em;
+    background: rgb(135, 240, 234);
+    display:none ;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 0.0625em solid rgb(0, 0, 1);
+}
+header .navbar ul li ul li ul{
+    left: 12.5em;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 1.125em;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:61.9375em){
+    header{
+        padding: 1.25em;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: lightseagreen;
+        border-top: 0.0625em solid black;
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background:  rgb(135, 240, 234);
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+.S1background{
+    width: 100%;
+    height: 800px;
+}
+.INTROTEXT{
+    color: bisque;
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    left: 100px;
+}
+span{
+    color: black;
+}
+#Free{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.BtnClass{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+}
+.SigninBtn{
+    color: white;
+    position: relative;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    font-size: 22px;
+    top: 90px;
+    left: 50px;
+    background: rgb(255, 136, 0);
+    transition: 0.5s;
+}
+.SigninBtn:hover{
+    background: blue;
+}
+.SignupBtn{
+    color: white;
+    background: blue;
+    position: absolute;
+    left: 30px;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    font-size: 22px;
+    margin:90px 35% ;
+    transition: 0.5s;
+}
+.SignupBtn:hover{
+    background: rgb(255, 136, 0);
+}
+.section2{
+    background-image: url(/pictures/background.jpg);
+    margin-top: -5px;
+}
+.Courses{
+    width: 100%;
+    margin: 50px 0px;
+    background: linear-gradient(rgba(16, 36, 36, 0),aqua)
+}
+.topic{
+    padding-left: 40px;
+    width: 300px;
+    height: 230px;
+}
+.information{
+    color: rgb(0, 0, 0);
+    padding-left: 40px;
+    font-size: 20px;
+    width: 230px;
+}
+.Learn{
+    margin: -30px 150px ;
+    font-size: 30px;
+    color:white ;
+}
+.icon{
+    color: blue;
+}
+ 

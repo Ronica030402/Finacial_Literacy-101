@@ -1,0 +1,96 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/Picture3.jpg);
+  }
+  
+  header {
+    background-color: #8278D9;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    font-weight: bolder;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    font-weight: bolder;
+  }
+  
+  th {
+    background-color: #8278D9;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  tr:nth-child(even) {
+    background-color:lightblue;
+  }
+  
+  /* Specific styles for the financial dashboard */
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: bolder;
+  }
+  
+  form {
+    max-width: 400px;
+    margin-top: 20px;
+    border: 3px solid darkblue;
+    padding: 20px;
+    font-weight: bolder;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bolder;
+  }
+  
+  input[type="date"], input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bolder;
+
+  }
+  
+  input[type="submit"] {
+    background-color:lightblue;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8278D9;
+  }
+  
+  
